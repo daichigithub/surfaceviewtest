@@ -123,11 +123,13 @@ public class LuckyPan extends SurfaceViewTemplate {
     public void surfaceCreated(SurfaceHolder holder) {
         super.surfaceCreated(holder);
 
+		//画弧的笔
         mArcPaint = new Paint();
         mArcPaint.setAntiAlias(true);
         mArcPaint.setDither(true);
 
         mRange = new RectF(getPaddingLeft(), getPaddingLeft(), mRadius + getPaddingLeft(), mRadius + getPaddingLeft());
+		//画文字的笔
         mTextPaint = new Paint();
         mTextPaint.setTextSize(mTextSize);
         mTextPaint.setColor(Color.WHITE);
